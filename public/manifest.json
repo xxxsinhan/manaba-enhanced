@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "manaba Enhanced for Tsukuba",
+  "name": "manaba Enhanced for Hitotsubashi",
   "version": "2.8.1",
   "description": "Make your manaba a little bit more comfortable",
   "icons": {
@@ -14,7 +14,7 @@
     "contextMenus",
     "webRequest",
     "webRequestBlocking",
-    "*://manaba.tsukuba.ac.jp/*"
+    "*:/manaba.hit-u.ac.jp/*"
   ],
   "options_page": "options.html",
   "background": {
@@ -23,7 +23,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://manaba.tsukuba.ac.jp/*"],
+      "matches": ["https://manaba.hit-u.ac.jp/*"],
       "run_at": "document_start",
       "js": ["contentScript.js"]
     }
